@@ -23,6 +23,7 @@ public class Poker {
 		System.out.println(playerHand.displayHand());
 		Hand computerHand = new Hand(d);
 		System.out.println(computerHand.displayHand());
+		System.out.println(playerHand.compare(computerHand));
 		
 		
 	 // Will make Hand object for player and one Hand object for "computer"

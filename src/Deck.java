@@ -24,7 +24,24 @@ public class Deck {
 	}
 
 	public void shuffle() {
-		int k = 0;
+		 Card temp;
+         for(int x = 1; x<= cards.size(); x++)
+         {
+             int ramd1 = (int)(Math.random() * cards.size() );
+             int ramd2 = (int)(Math.random() * cards.size());
+             temp = cards.get(ramd1);
+             cards.set(ramd1, cards.get(ramd2));
+             cards.set(ramd2, temp);
+         }
+		
+		
+		
+		
+		
+		
+		
+		
+		/* int k = 0;
 		int size = this.cards.size();
 		ArrayList<Card> shuffled = cards;
 			for(int i = 0; i < size / 2; i++) {
@@ -37,6 +54,7 @@ public class Deck {
 				k += 2;
 			}
 		cards = shuffled;
+		*/
 	}
 
 	public Card deal() {
